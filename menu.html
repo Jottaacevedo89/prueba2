@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENU PRINCIPAL</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="menu.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="vertical-menu">
+    <ul>
+        <li><a href="./menu.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="./deposito.html"><i class="fas fa-coins"></i> Depositar</a></li>
+        <li><a href="./enviardinero.html"><i class="fas fa-money-bill-wave"></i> Enviar dinero</a></li>
+        <li><a href="./transacciones.html"><i class="fas fa-exchange-alt"></i> Transacciones</a></li>
+        <li><a href="#"><i class="fas fa-credit-card"></i> Tarjetas</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Configuración</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h2 id="welcomeMessage"></h2>
+      <div class="rounded-container">
+        <p>MI TARJETA</p>
+        <div class="credit-card">
+          <div class="chip"></div>
+          <div class="card-number">1234 5678 9012 3456</div>
+          <div class="card-holder" id="cardHolder"></div>
+          <div class="card-expiry">12/24</div>
+          <div class="bank-name">JOTTABANK</div>
+        </div>
+        <div class="balance-total">Balance total</div>
+        <div class="dinero-en-cuenta">$250.000</div>
+        <br>    
+
+      </div>
+    </div>
+    <BR>
+    <div class="botones-primarios"></div>
+    <a href="./deposito.html" class="btn btn-primary">Depositar</a>
+    <a href="./enviardinero.html" class="btn btn-primary">Enviar Dinero</a>
+    <a href="./transacciones.html" class="btn btn-primary">Últimos Movimientos</a>
+
+    <div class="container-wrapper">
+      <div class="container">
+      </div>
+
+      <aside class="transactions-aside">
+        <p>NAVEGACIÓN</p>
+        <canvas id="monthlyExpensesChart" width="400" height="400"></canvas>
+      </aside>
+    </div>
+  </main>
+
+  <script src="./menu.js"></script>
+
+  <footer>
+    <a href="mailto:acevedo.javiera89@gmail.com"><i class="fas fa-envelope"></i> Contacto</a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i> Dirección</a>
+    <a href="https://wa.me/xxxxxxxxxx"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+  </footer>
+</body>
+</html>
+

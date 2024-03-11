@@ -1,0 +1,40 @@
+body {
+    background-color: #2b2929;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    color: #f8f9fa;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;            /* Altura del viewport */
+    flex-direction: column;  /* Orientación vertical de los elementos internos */
+    
+  }
+
+  /* Centrar el botón con Flexbox */
+
+  
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+  }
+
+  .btn-primary {
+    background-color: #999b9c; /* Gris claro */
+    border-color: #dae0e5; /* Borde ligeramente más oscuro que el fondo */
+    color: #000; /* Texto negro */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Cambiar colores al pasar el mouse por encima para mantener la usabilidad */
+.btn-primary:hover {
+    background-color: #d5dbe0; /* Un poco más oscuro al pasar el mouse */
+    border-color: #c1c7cd;
+}
+
+  
+  

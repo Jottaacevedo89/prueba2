@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENVIAR DINERO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./enviardinero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="vertical-menu">
+        <ul>
+            <li><a href="./menu.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="./deposito.html"><i class="fas fa-coins"></i> Depositar</a></li>
+            <li><a href="./enviardinero.html"><i class="fas fa-money-bill-wave"></i> Enviar dinero</a></li>
+            <li><a href="./transacciones.html"><i class="fas fa-exchange-alt"></i> Transacciones</a></li>
+            <li><a href="#"><i class="fas fa-credit-card"></i> Tarjetas</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Configuración</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2 id="welcomeMessage">¡Bienvenido!</h2>
+            <div class="rounded-container">
+                <p>MI TARJETA</p>
+                <div class="credit-card">
+                    <div class="chip"></div>
+                    <div class="card-number">1234 5678 9012 3456</div>
+                    <div class="card-holder" id="cardHolder">Nombre del Titular</div>
+                    <div class="card-expiry">12/24</div>
+                    <div class="bank-name">JOTTABANK</div>
+                </div>
+                <div class="balance-total">Balance total</div>
+                <div class="dinero-en-cuenta">$250.000</div>
+                <br>    
+            </div>
+        </div>
+
+        <div class="container-wrapper">
+            <div class="container">
+            </div>
+
+            <aside class="enviardinero-aside">
+                <div class="container">
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Dinero</title>
+</head>
+<body>
+    <h2>ENVIAR DINERO</h2>
+
+    <form id="searchForm">
+        <label for="searchContact">Buscar contacto:</label>
+        <input type="text" id="searchContact" placeholder="Search contact">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <button id="addContactButton">Agregar nuevo contacto</button>
+
+    <div id="addContactModal" style="display: none;">
+        <h3>AÑADIR NUEVO CONTACTO</h3>
+        <form id="addContactForm">
+            <label for="firstName">Nombre:</label>
+            <input type="text" id="firstName" required>
+            <label for="lastName">Apellidos:</label>
+            <input type="text" id="lastName" required>
+            <label for="rut">RUT:</label>
+            <input type="text" id="rut" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="bank">Banco:</label>
+            <input type="text" id="bank" required>
+            <label for="accountType">Tipo de cuenta:</label>
+            <select id="accountType" required>
+                <option value="cuenta_vista">Cuenta Vista</option>
+                <option value="cuenta_corriente">Cuenta Corriente</option>
+                <option value="cuenta_ahorro">Cuenta Ahorro</option>
+            </select>
+            <label for="accountNumber">Número de cuenta:</label>
+            <input type="text" id="accountNumber" required>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+    <script>
+        const addContactButton = document.getElementById('addContactButton');
+        const addContactModal = document.getElementById('addContactModal');
+
+        addContactButton.addEventListener('click', () => {
+            addContactModal.style.display = 'block';
+        });
+
+        addContactModal.addEventListener('click', (event) => {
+            if (event.target === addContactModal) {
+                addContactModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <a href="mailto:acevedo.javiera89@gmail.com"><i class="fas fa-envelope"></i> Contacto</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Dirección</a>
+        <a href="https://wa.me/xxxxxxxxxx"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+    </footer>
+</body>
+</html>
